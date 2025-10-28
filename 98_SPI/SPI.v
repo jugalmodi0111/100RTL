@@ -36,9 +36,9 @@ module spi_state(
                 1: begin
                     sclk <= 1'b0;
                     cs_l <= 1'b0;
-                    MOSI <=datain[count-1];
-                    count <=count-1;
-                    state <=2;
+                    MOSI <= datain[count-1];
+                    count <= count-1;
+                    state <= 2;
                 end
     
                 2: begin
